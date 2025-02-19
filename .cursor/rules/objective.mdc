@@ -1,0 +1,45 @@
+---
+description: objective of the application
+globs: *.tsx,*.ts
+---
+Project Overview:
+We need a responsive, outstanding, and clean UI for a web application that analyzes and showcases trending Twitch streamers and their clips. The design should be built using shadcn components (https://ui.shadcn.com/) and must align with a dark theme aesthetic. We want a purple-forward color palette that resonates with Twitch’s brand style—modern, bold, yet minimalistic enough to ensure a pleasant, intuitive user experience.
+
+Key Requirements:
+
+Visual Style & Branding
+Dark theme as the primary style, leveraging deep grays and blacks for backgrounds.
+Vibrant purple accents (similar to Twitch’s signature purple) for interactive elements, highlights, and call-to-action buttons.
+Use of clean, modern typography that ensures high contrast and legibility in dark mode.
+Subtle gradients, glows, or geometric shapes that enhance the “gaming/streaming” vibe without overwhelming the UI.
+Layout & Navigation
+A responsive layout that adapts seamlessly to desktop, tablet, and mobile screens.
+A prominent sidebar or top navigation (depending on best UX) with intuitive icons and labels for sections like Dashboard, Analytics, Clips, Trending, and Settings.
+Clear hierarchy of content: primary content area for main analytics and leaderboards, secondary panels for filters or user interactions.
+A collapsible menu or hamburger icon on mobile to keep the interface clean.
+Core Screens & Components
+Dashboard Page: Display key metrics (e.g., total rising streamers, daily viewer spikes, trending clips). Include cards or widgets for quick stats.
+Trending/Leaderboard Page: A clean leaderboard view that ranks streamers, showing profile images, follower counts, average viewers, and short trending indicators (arrows, color-coded changes).
+Clip Analysis Page: Thumbnails of clips with play buttons, brief stats (views, likes, date created). Possibly show a small preview modal on hover or click.
+Streamer Details Page: Deeper analytics (graphs for viewership over time, follower growth, chat sentiment, etc.), plus a user-friendly filter bar to change timeframes.
+Settings/User Profile: Basic user account management, subscription info, notifications settings, etc.
+Interactivity & User Experience
+Use shadcn components for consistent styling (e.g., buttons, modals, tabs, accordions).
+Incorporate micro-interactions or subtle animations (hover states, transitions on modal open/close) to enhance the premium feel.
+Provide clear call-to-action elements (e.g., “View More Clips,” “Upgrade Plan,” “Share,” “Filter by Date Range”).
+Ensure forms and data input elements (filters, search bars) are accessible and visually distinct.
+Responsiveness & Accessibility
+Each screen should look and function well on large monitors down to small mobile devices.
+Maintain at least AA contrast ratios for text on dark backgrounds.
+Use accessible color contrasts for buttons, links, and hover states, especially with purple highlights.
+Overall Mood & Inspiration
+Channel the feel of Twitch’s brand (playful yet sleek, gamer-centric, high contrast, energetic purple) without directly copying.
+Refer to the attached moodboard or reference image for general layout inspiration, focusing on a dark UI with purple highlights, clear typography, and bold data visualization.
+Deliverables
+High-fidelity design mockups for desktop and mobile breakpoints, including all core screens.
+Style guidelines for color palette (hex or RGBA values), typography, spacing, and component usage.
+Interaction notes or prototypes demonstrating hover states, transitions, and any animation details.
+Objective:
+Create an intuitive, visually striking dark-themed UI using shadcn. Make it easy for users to navigate analytics, discover rising streamers, and explore viral clips. Emphasize a clean layout with strategic use of purple accents, ensuring a premium, gamer-oriented vibe.
+
+Please generate detailed UI mockups or a structured component library that meets these specifications. The final design should feel polished, cohesive, and ready for development with shadcn + Tailwind CSS.
