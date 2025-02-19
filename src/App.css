@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --primary: 255 92% 76%;
+    --primary-foreground: 0 0% 100%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 255 92% 76%;
+    --accent-foreground: 0 0% 100%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Gradient Cards */
+.gradient-card {
+  @apply relative overflow-hidden rounded-xl bg-gradient-to-br from-muted to-background border border-border/50;
+  backdrop-filter: blur(20px);
+}
+
+.gradient-card::before {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-50;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 rounded-full hover:bg-primary/50 transition-colors;
+}
+
+/* Glowing Effects */
+.glow-effect {
+  @apply relative;
+}
+
+.glow-effect::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 blur-xl opacity-0 transition-opacity;
+}
+
+.glow-effect:hover::after {
+  @apply opacity-100;
+}
+
+/* Chart Styles */
+.chart-container {
+  @apply rounded-xl bg-muted/50 p-4;
+}
+
+.chart-grid line {
+  @apply stroke-border;
+}
+
+.chart-axis text {
+  @apply fill-muted-foreground;
+}
+
+/* Navigation Active States */
+.nav-item-active {
+  @apply bg-primary/10 text-primary;
+}
+
+/* Custom Button Styles */
+.btn-gradient {
+  @apply bg-gradient-to-r from-primary to-accent text-white shadow-lg hover:shadow-primary/25 transition-all;
+}
